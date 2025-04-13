@@ -1,11 +1,22 @@
+
+
 {
-    "name" : "Smriti-AI",
-    "version" : "1.0",
-    "manifest_version" : 3,
-    "description" : "Smriti-AI is a Chrome extension that helps you to remember things better by provided personalized reminders and notes.",
-    "permissions": ["storage", "notifications", "activeTab","scripting"],
-    "browser_action": {
-        "default_popup": "popup.html",
-        "default_icon": "icon.png"
-    }
-}
+    "manifest_version": 3,
+    "name": "Smriti AI Bookmark Button",
+    "version": "1.0",
+    "description": "Adds a bookmark button to YouTube videos",
+    "permissions": ["scripting"],
+    "host_permissions": ["https://www.youtube.com/*"],
+    "action": {
+     
+      "default_icon": "icon.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/watch*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
