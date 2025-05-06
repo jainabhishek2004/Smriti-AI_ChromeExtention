@@ -16,9 +16,9 @@ function addBookmarkButton() {
     bookmarkBtn.textContent = 'Bookmark';
 
     // Styling similar to YouTube's Subscribe button
-    bookmarkBtn.style.backgroundColor = '#cc0000';  //#cc000
+    bookmarkBtn.style.backgroundColor = 'red';  //#cc000
     bookmarkBtn.style.color = '#fff';
-    bookmarkBtn.style.border = 'green 3px solid';///modefy
+    bookmarkBtn.style.border = 'white 3px solid';///modefy
     bookmarkBtn.style.borderRadius = '18px';
     bookmarkBtn.style.padding = '0 16px';
     bookmarkBtn.style.marginLeft = '8px';
